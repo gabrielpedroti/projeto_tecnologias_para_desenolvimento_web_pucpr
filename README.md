@@ -1,12 +1,25 @@
-# React + Vite
+## **Tela de Login – Tecnologias para Desenvolvimento Web**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido na disciplina de **Tecnologias para Desenvolvimento Web** na **PUC-PR**.
 
-Currently, two official plugins are available:
+A aplicação consiste em uma tela de **Login** criada em **React** utilizando **Vite**.  
+O projeto teve como objetivo aplicar os conceitos estudados nas primeiras quatro unidades da disciplina:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Arrays**
+- **Componentes e Props**
+- **Componentes de Classe e State**
+- **Formulários**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### **🖥️ Como funciona**
+
+- O sistema possui um formulário com campos de **e-mail** e **senha**.  
+- Apenas endereços terminados em `@pucpr.edu.br` são aceitos.  
+- A validação é feita comparando os dados digitados com um **array** pré-definido.  
+- Exibe mensagem de sucesso ou erro conforme o resultado da validação.
+
+---
+
+### **🚧 Status**
+Disciplina ainda em andamento. Este projeto representa a **Atividade Somativa 1 somente**.
