@@ -1,5 +1,6 @@
-import React from "react";
+// src/App.jsx (trecho principal)
 import { Routes, Route, Link } from "react-router-dom";
+import PrivateRoute from "./auth/PrivateRoute.jsx";
 import Home from "./pages/Home";
 import LoginFirebase from "./pages/LoginFirebase";
 import ItensList from "./pages/ItensList";
@@ -19,10 +20,13 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginFirebase />} />
-        {/* As rotas abaixo ficarão PROTEGIDAS depois */}
-        <Route path="/itens" element={<ItensList />} />
-        <Route path="/itens/novo" element={<ItemForm />} />
-        <Route path="/itens/:id/editar" element={<ItemForm />} />
+
+        {/* Tudo abaixo só abre se estiver logado */}
+        <Route element={<PrivateRoute />}>
+          <Route path="/itens" element={<ItensList />} />
+          <Route path="/itens/novo" element={<ItemForm />} />
+          <Route path="/itens/:id/editar" element={<ItemForm />} />
+        </Route>
       </Routes>
     </>
   );

@@ -1,25 +1,27 @@
-## **Tela de Login – Tecnologias para Desenvolvimento Web**
+## **AS2 – Tecnologias para Desenvolvimento Web**
 
 Projeto desenvolvido na disciplina de **Tecnologias para Desenvolvimento Web** na **PUC-PR**.
 
-A aplicação consiste em uma tela de **Login** criada em **React** utilizando **Vite**.  
-O projeto teve como objetivo aplicar os conceitos estudados nas primeiras quatro unidades da disciplina:
-
-- **Arrays**
-- **Componentes e Props**
-- **Componentes de Classe e State**
-- **Formulários**
+O objetivo desta atividade foi compreender e aplicar os conceitos de **rotas**, **autenticação** e **integração com banco de dados** em uma aplicação web.  
+Para isso, foi criada uma aplicação em **React + Vite**, integrada ao **Firebase**, servindo como base prática para os conteúdos estudados.
 
 ---
 
-### **🖥️ Como funciona**
-
-- O sistema possui um formulário com campos de **e-mail** e **senha**.  
-- Apenas endereços terminados em `@pucpr.edu.br` são aceitos.  
-- A validação é feita comparando os dados digitados com um **array** pré-definido.  
-- Exibe mensagem de sucesso ou erro conforme o resultado da validação.
+### **🚀 Funcionalidades implementadas**
+- **Autenticação com Firebase** (cadastro e login por e-mail/senha)  
+- **Rotas privadas** com React Router (apenas usuários logados acessam `/itens`)  
+- **CRUD completo** de itens utilizando o Firestore (criar, listar, editar, excluir)  
+- **Deploy** no Firebase Hosting: [Acesse aqui](https://as2---tecnologias-para-dev-web.web.app/)
 
 ---
 
-### **🚧 Status**
-Disciplina ainda em andamento. Este projeto representa a **Atividade Somativa 1 somente**.
+### **📚 Objetivo do projeto**
+Este projeto foi desenvolvido como parte da **Atividade Somativa 2 (AS2)** da disciplina, tendo como foco **entender os fundamentos do Firebase e a integração com React**.  
+A ênfase estava nos conceitos técnicos de autenticação, segurança e persistência de dados, **não no estilo visual da aplicação**.
+
+---
+
+### **⚠️ Observações**
+- A interface foi feita de forma simples, com foco nos requisitos funcionais solicitados.  
+- Por conta do tempo disponível, não houve customização de design/UI além do essencial.  
+- Pretendo evoluir este projeto futuramente para deixá-lo mais completo e apresentável como portfólio, com melhorias visuais e usabilidade aprimorada.
